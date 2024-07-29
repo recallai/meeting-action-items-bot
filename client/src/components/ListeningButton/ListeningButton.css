@@ -1,0 +1,21 @@
+.ListeningButton {
+  border: 0;
+  border-radius: 12px;
+  background: rgba(29, 244, 50, 0.1);
+  color: #198f25;
+  font: normal 500 18px "Helvetica Neue";
+  width: 20%;
+}
+
+.ListeningButton--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.ListeningButton--text {
+  padding: 0;
+}

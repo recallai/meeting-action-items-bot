@@ -1,0 +1,14 @@
+.Header {
+  width: 60%;
+}
+
+.Header--heading {
+  color: #212529;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.Header--subheading {
+  color: #9499a4;
+  font: normal 400 20px/130% "Helvetica Neue";
+}

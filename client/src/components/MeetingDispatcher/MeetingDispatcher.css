@@ -1,0 +1,42 @@
+.MeetingDispatcher {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 60%;
+  align-items: center;
+  justify-content: start;
+}
+
+.MeetingDispatcher--button {
+  border: 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.3);
+  font: normal 500 18px "Helvetica Neue";
+  width: 20%;
+  height: 60px;
+  transition: background 0.3s, color 0.3s;
+  cursor: not-allowed;
+}
+
+/* Active button when there's text in the input */
+.MeetingDispatcher--button--active {
+  background: #0d6efd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.MeetingDispatcher--input {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  height: 55px;
+  font-size: 20px;
+  outline: none;
+  padding: 0 30px;
+}
+
+.MeetingDispatcher--input:focus {
+  border-color: #e0e0e0;
+  box-shadow: none;
+}

@@ -1,0 +1,46 @@
+.MeetingDisplay {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  color: rgba(30, 30, 30, 0.5);
+  border: 1px solid #e7e7e7;
+}
+
+.MeetingDisplay--header {
+  color: #1e1e1e;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.MeetingDisplay--banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.MeetingDisplay--icon {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-left: 15px;
+}
+
+.MeetingDisplay--display {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  min-height: 500px;
+}
+
+.MeetingDisplay--message {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.MeetingDisplay--message.error {
+  color: #dc3545;
+}
