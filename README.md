@@ -1,5 +1,7 @@
 # Meeting Action Items Bot
 
+![](./action_items_animation.gif)
+
 This is a sample app that demonstrates how to create a bot that extracts action items from Zoom meetings using [Recall.ai](https://recall.ai) and [OpenAI](https://platform.openai.com/docs/overview).
 
 ## Prerequisites
