@@ -65,7 +65,6 @@ Create a `.env` file for the backend. There's a `.env.example` file to get you s
 ```
   RECALL_API_KEY=[recall_api_key]
   RECALL_REGION=[recall_region]
-  RECALL_WEBHOOK_SECRET=[recall_webhook_secret]
   OPENAI_API_KEY=[openai_api_key]
 ```
 
@@ -94,13 +93,11 @@ Since this app uses webhooks to get the status of the bot in real time, we need 
 ngrok http --domain {YOUR_STATIC_DOMAIN} 3000
 ```
 
-Now to create `RECALL_WEBHOOK_SECRET`, head to the [Recall.ai webhook dashboard](https://us-west-2.recall.ai/dashboard/webhooks/) and click **Add Endpoint**. The endpoint URL should look like this:
+Now head to the [Recall.ai webhook dashboard](https://us-west-2.recall.ai/dashboard/webhooks/) and click **Add Endpoint**. The endpoint URL should look like this:
 
 ```bash
 {YOUR_NGROK_STATIC_DOMAIN}/webhook/status_change
 ```
-
-Copy the signing secret from the webhook's page and paste it into your `.env` file.
 
 ### Run The Backend
 
