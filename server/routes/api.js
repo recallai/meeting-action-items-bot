@@ -11,24 +11,10 @@ router.get("/events", eventsHandler);
 router.post("/invite_bot", async (req, res) => {
   const meetingUrl = req.body.meetingUrl;
   try {
-    const response = await axios.post(
-      `https://${config.recallRegion}.recall.ai/api/v1/bot`,
-      {
-        bot_name: "ZoomBot",
-        meeting_url: meetingUrl,
-        transcription_options: {
-          provider: "meeting_captions",
-        },
-      },
-      {
-        headers: {
-          Authorization: `Token ${config.recallApiKey}`,
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    res.send(JSON.stringify(response.data, null, 2));
+    // dispatch a bot to the meeting URL above
+    //
+    //
+    //
   } catch (error) {
     console.error("Failed to invite bot", error);
     const status = error.response?.status;

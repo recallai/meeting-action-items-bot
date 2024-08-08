@@ -14,17 +14,11 @@ router.post("/status_change", async (req, res) => {
   // extract action items when meeting is over
   if (data.status.code === "done") {
     try {
-      const transcriptResponse = await axios.get(
-        `https://${config.recallRegion}.recall.ai/api/v1/bot/${data.bot_id}/transcript`,
-        {
-          headers: {
-            Authorization: `Token ${config.recallApiKey}`,
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const transcript = transcriptResponse.data;
+      // pull the transcript of the conversation
+      //
+      //
+      //
+      const transcript = null;
 
       // error handling for empty transcript
       if (transcript.length === 0) {
