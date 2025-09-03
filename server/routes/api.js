@@ -16,9 +16,14 @@ router.post("/invite_bot", async (req, res) => {
       {
         bot_name: "ZoomBot",
         meeting_url: meetingUrl,
-        transcription_options: {
-          provider: "meeting_captions",
+        recording_config: {
+        // ✅ Enable transcripts here
+        transcript: {
+          provider: {
+            recallai_streaming: {} // or assembly_ai_v3_streaming, deepgram_streaming, etc.
+          }
         },
+      }
       },
       {
         headers: {
