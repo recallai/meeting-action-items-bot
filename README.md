@@ -4,6 +4,8 @@
 
 This is a sample app that demonstrates how to create a bot that extracts action items from Zoom meetings using [Recall.ai](https://recall.ai) and [OpenAI](https://platform.openai.com/docs/overview).
 
+To get a step-by-step walkthrough check out the blog that goes over [how to build a meeting notetaker using this repo](https://www.recall.ai/blog/how-to-build-a-meeting-notetaker) or the [video demo](https://youtu.be/CAwfV0JgjmM).
+
 ## Prerequisites
 
 1. [Node.js](https://nodejs.org/en/)
