@@ -2,7 +2,7 @@ const config = require("./config");
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  apiKey: config.openaiApiKey,
+  apiKey: config.openAiApiKey,
 });
 
 const extractActionItems = async (meetingTranscript) => {
