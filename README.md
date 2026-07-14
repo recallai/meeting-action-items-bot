@@ -6,6 +6,8 @@ This is a sample app that demonstrates how to create a bot that extracts action 
 
 To get a step-by-step walkthrough check out the blog that goes over [how to build a meeting notetaker using this repo](https://www.recall.ai/blog/how-to-build-a-meeting-notetaker) or the [video demo](https://youtu.be/CAwfV0JgjmM).
 
+Learn more about how to use Recall.ai as your [meeting action items API](https://www.recall.ai/product/notetaker-api).
+
 ## Prerequisites
 
 1. [Node.js](https://nodejs.org/en/)
